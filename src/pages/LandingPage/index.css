@@ -1,0 +1,87 @@
+:root {
+  /* --main-background: #0a182a; */
+  --main-background: #29526d;
+  --text-color-white: #f7fafc;
+}
+
+* {
+  color: var(--text-color-white);
+  overflow: hidden;
+}
+
+#container {
+  padding: 15px;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  background-color: var(--main-background);
+}
+.header-text {
+  font-size: 4rem;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.logo {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 512px;
+  height: 512px;
+  margin-top: 150px;
+}
+
+.logo img {
+  width: auto;
+  text-align: center;
+  border-radius: 50%;
+  animation: sway 6s forwards ease-in-out;
+}
+
+@keyframes sway {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+
+  100% {
+    transform: rotateZ(1080deg);
+    filter: hue-rotate(720deg);
+  }
+}
+
+.link {
+  text-decoration: underline;
+  font-weight: lighter;
+  color: #e2e1e1;
+}
+
+.link:hover {
+  color: #92d3ff;
+}
+
+.footer {
+  text-align: center;
+  height: auto;
+  padding: 5px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  font-weight: bold;
+}
+
+.react-rotating-text-cursor {
+  animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s
+    infinite;
+}
+
+@keyframes blinking-cursor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,6 @@
+version: '3'
+services:
+  sippysite:
+    build: .
+    ports:
+      - '4025:4025'

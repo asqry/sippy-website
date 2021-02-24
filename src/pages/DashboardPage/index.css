@@ -1,0 +1,16 @@
+/* #graph-container {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.graph {
+  margin: 2.5%;
+} */
+
+* {
+  overflow-x: hidden;
+}
