@@ -36,6 +36,13 @@ function App() {
           return null;
         }}
       />
+      <Route
+        path="/i"
+        component={() => {
+          window.location.href = 'https://asqry.me/discord';
+          return null;
+        }}
+      />
     </Switch>
   );
 }
