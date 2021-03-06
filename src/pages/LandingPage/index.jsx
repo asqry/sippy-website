@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as RotateText from 'react-rotating-text';
 import { IsLive } from '../../components';
 import axios from 'axios';
-import {} from 'dotenv/config';
 
 import {
   faTwitter,
