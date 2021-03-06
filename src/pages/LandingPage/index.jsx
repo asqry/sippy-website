@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as RotateText from 'react-rotating-text';
 import { IsLive } from '../../components';
 import axios from 'axios';
+import {} from 'dotenv/config';
 
 import {
   faTwitter,
@@ -20,7 +21,10 @@ export function LandingPage(props) {
 
   useEffect(() => {
     axios
-      .get('https://api.twitch.tv/helix/streams?user_id=567635354')
+      .get('https://api.twitch.tv/helix/streams?user_id=567635354', {
+        'Client-Id': process.env.CLIENTID,
+        'Authorization': 'Bearer ' + process.env.TOKEN,
+      })
       .then(({ type }) => {
         if (!type || type == null) setLive(false);
         else setLive(true);
