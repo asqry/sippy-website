@@ -1,9 +1,8 @@
-import React from 'react';
-import { Button, Center } from '@chakra-ui/react';
-import { FaInfoCircle } from 'react-icons/fa';
+import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import axios from 'axios';
 import * as RotateText from 'react-rotating-text';
+import { IsLive } from '../../components';
+import axios from 'axios';
 
 import {
   faTwitter,
@@ -14,10 +13,23 @@ import {
 import year from 'year';
 import './index.css';
 import logo from './img/logo.svg';
+import { FaConnectdevelop } from 'react-icons/fa';
 
 export function LandingPage(props) {
+  var [isLive, setLive] = useState(() => {}, []);
+
+  useEffect(() => {
+    axios
+      .get('https://api.twitch.tv/helix/streams?user_id=567635354')
+      .then(({ type }) => {
+        if (!type || type == null) setLive(false);
+        else setLive(true);
+      });
+  });
+
   return (
     <div id="container">
+      {isLive ? <IsLive /> : null}
       <h1 className="header-text">
         sippy |{' '}
         {

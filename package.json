@@ -25,6 +25,7 @@
     "react-rotating-text": "^1.4.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
+    "react-twitch-embed": "^2.1.0",
     "react-vis": "^1.11.7",
     "web-vitals": "^0.2.4",
     "year": "^0.2.1"

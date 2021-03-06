@@ -1,6 +1,6 @@
 import './App.css';
 import { Switch, Route } from 'react-router-dom';
-import { LandingPage, DashboardPage } from './pages';
+import { LandingPage, ViewPage } from './pages';
 
 function App() {
   document.title = 'sippy ✨';
@@ -43,6 +43,7 @@ function App() {
           return null;
         }}
       />
+      <Route path="/view" exact={true} component={ViewPage} />
     </Switch>
   );
 }
