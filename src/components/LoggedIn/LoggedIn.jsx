@@ -1,5 +1,4 @@
 import React from 'react';
-import { getUserDetails } from '../../utils/api';
 import './index.css';
 import { Stat, StatNumber, Button, HStack } from '@chakra-ui/react';
 
@@ -9,7 +8,7 @@ export function LoggedIn({ user }) {
       <Stat>
         <StatNumber>
           <HStack id="loggedIn-inner">
-            <img src={user.avatarURL} />
+            <img src={user.avatarURL} alt="logo" />
             <h2>{user.discriminator}</h2>
             {'\u200b       \u200b'}
             <Button

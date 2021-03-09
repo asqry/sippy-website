@@ -1,13 +1,5 @@
 import React from 'react';
-import {
-  Center,
-  Alert,
-  AlertTitle,
-  AlertDescription,
-  AlertIcon,
-  CloseButton,
-} from '@chakra-ui/react';
-import { FaInfoCircle } from 'react-icons/fa';
+import { Center, Alert, AlertTitle, AlertIcon } from '@chakra-ui/react';
 import './index.css';
 
 export function IsLive() {

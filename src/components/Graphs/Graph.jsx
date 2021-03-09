@@ -1,14 +1,6 @@
 import React from 'react';
 import './index.css';
-import {
-  Stat,
-  StatLabel,
-  StatNumber,
-  StatHelpText,
-  StatArrow,
-  StatGroup,
-  Center,
-} from '@chakra-ui/react';
+import { Stat, StatNumber, StatHelpText, Center } from '@chakra-ui/react';
 
 export function Graph(props) {
   console.log(props.color);

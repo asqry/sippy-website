@@ -13,7 +13,6 @@ import {
 import year from 'year';
 import './index.css';
 import logo from './img/logo.svg';
-import { FaConnectdevelop } from 'react-icons/fa';
 
 export function LandingPage(props) {
   var [isLive, setLive] = useState(() => {}, []);
@@ -49,7 +48,7 @@ export function LandingPage(props) {
       </h1>
       <br />
       <div className="logo">
-        <img src={logo} />
+        <img src={logo} alt="sippy logo" />
       </div>
 
       <div className="footer">
